@@ -8,15 +8,15 @@
 		<style>
 
 html, body {
-           margin: 0;
-           padding: 0;
-           background: #333;
-           color: #eee;
-           font-family: monospace;
-           width: 100vw;
-           height: 100vh;
-           overflow: hidden;
-            }
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #eee;
+    font-family: monospace;
+    width: 100vw;
+    height: 100vh;
+
+ }
 
 .img {
 
@@ -43,7 +43,8 @@ a {
 .flicker {
   margin: 1rem auto;
   color: #fffefe61;
-  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.1, #ffffff)) no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), 
+  to(#1d1c1c), color-stop(0.1, #ffffff)) no-repeat;
   background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.1, #fff)) no-repeat;
   background-size: 20px 100%;
   -webkit-background-clip: text;
@@ -61,54 +62,71 @@ a {
 }
 
 
-.msg {
+.message-box{
     background:#222;
     width:80%;
-    text-align:left;
-    margin:3px;
+    height:250px;
+}
+
+.msg {
+
+    text-align:left
 }
 
 
 .mymsg {
-    background:#fff;
-    width:90%;
+    background:#222;
+    width:78%;
     outline:none;
     border:none;
     padding:5px;
+    float:bottom;
+    top:0;
+}
+
+.mymsg::selection {
+background:blue;
+color:white;
+padding:5px;
+}
+
+
+a, i {
+    font-size:30px;
+ 
 }
 </style>
 
 </head>
 <body>
 <center>
-<img src="https://avatars.githubusercontent.com/u/47966968?v=4" class="img"/>
+<img src="https://avatars.githubusercontent.com/u/47966968?v=4" class="img">
 <h2>
-Hi, I am <font class="flicker">Kaito</font> <br>and I love Coding.
+Hi, I am <font class="flicker">Kaito Legion</font> <br>and I am currentl <br>
+BSIT student and I love Coding.
 </h2>
 
 <h2>You can reach me at:</h2>
 
-<a href="https//fb.me/kaito.generalao25"> <i class="fa fa-facebook-square"></i></a>
+<a href="https://fb.me/kaito.generalao25"> <i class="fa fa-facebook-square"></i></a>
 
-<a href="https//github.com/kaitolegion"> <i class="fa fa-github"></i></a>
+<a href="https://github.com/kaitolegion"> <i class="fa fa-github"></i></a>
 
-<a href="https//fb.me/kaito.generalao25"> <i class="fa fa-linkedin"></i></a>
-
-
-<h2>Contact me~:</h2>
+<a href=""> <i class="fa fa-linkedin"></i></a>
 
 
+<h2>or Contact me below:</h2>
+
+<div class="message-box">
 <div class="msg">
-<pre>
-Kaito: Please feel free to 
-contact me if you need any 
-further information.
-</pre>
-<input class="mymsg" type=text placeholder="Your message here">
-<input type=submit >
-
-
+Kaito~: <font style="color:green">Please feel free to 
+contact me if you need any<br>
+further help or ask.</font>
 </div>
+</div>
+<input class="mymsg" type=text placeholder="Your message here">
+
+
 <footer>
 <h3>kaito@legion Copyright &copy; 2023</h3>
 
