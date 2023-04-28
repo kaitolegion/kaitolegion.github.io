@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src='https://kit.fontawesome.com/a076d05399.js'>
-    </script>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>kaito@legion~#
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/47966968?v=4">
+  
     <style>
       @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
       body {
         font-size: 1.5vmin;
-        height: 100vh;
-        width: 100vw;
         justify-content: center;
         align-items: center;
         color: #e4bb68;
@@ -64,10 +62,22 @@
       .message-box{
         background:#222;
         width:60%;
-        height:60px;
+        height:50px;
       }
-      .msg {
-        text-align:left
+      .contact-box{
+        background:#222;
+        width:60%;
+        height:50px;
+        outline:none;
+        border:none;
+        color:green;
+      }
+      .btn-send{
+        outline:none;
+        border:none;
+        cursor:pointer;
+        background:green;
+        color:white;
       }
       .mymsg {
         background:#222;
@@ -78,15 +88,11 @@
         float:bottom;
         top:0;
       }
-      .mymsg::selection {
-        background:blue;
-        color:white;
-        padding:5px;
-      }
+      
       a, i {
         font-size:30px;
       }
-      /* type writter */
+
       .line-1{
         position: relative;
         top: 50%;
@@ -99,7 +105,6 @@
         overflow: hidden;
         transform: translateY(-50%);
       }
-      /* Animation */
       .anim-typewriter{
         animation: typewriter 4s steps(44) 1s 1 normal both,
           blinkTextCursor 500ms steps(44) infinite normal;
@@ -132,46 +137,38 @@
         W3lcome to my personal static website in github.com
       </h2>
       <div class="message-box">
-        <div class="msg">
           <span>
-            <br>
             <div class="line-1 anim-typewriter">
-              <span style="color:green">Hi I'm Kaito How may I help u with?....
+              <span style="color:green">Hi I'm Kaito How may I help u with?...
               </span>
-            </div>
             </div>
         </div>
         <h2>My skills
         </h2>
-        <a href=""> 
-          <i class="fab fa-python">
-          </i>
+         <a href=""> 
+          <i class="fab fa-python"></i>
         </a>
         <a href=""> 
-          <i class="fab fa-linux">
-          </i>
+          <i class="fab fa-linux"></i>
         </a>
         <a href=""> 
-          <i class="fab fa-php">
-          </i>
+          <i class="fab fa-php"></i>
         </a>
         <a href=""> 
-          <i class="fab fa-node">
-          </i>
+          <i class="fab fa-node"></i>
         </a>
         <a href=""> 
-          <i class="fa fa-html5">
-          </i>
+          <i class="fa fa-html5"></i>
         </a>
         <a href=""> 
-          <i class="fab fa-java">
-          </i>
+          <i class="fab fa-java"></i>
         </a>
+        
+        
         <h2>You can reach me at:
         </h2>
         <a href="https://fb.me/kaito.generalao25"> 
-          <i class="fa fa-facebook-square">
-          </i>
+          <i class="fa fa-facebook-square"></i>
         </a>
         <a href="https://github.com/kaitolegion"> 
           <i class="fa fa-github">
@@ -181,8 +178,9 @@
           <i class="fa fa-linkedin">
           </i>
         </a>
-        <h2>or Contact me below:
-        </h2>
+        <h2>or Contact me below:</h2>
+        <textarea type="text" class="contact-box"></textarea><br>
+        <button class="btn-send">Send</button>
         <footer>
           <h3>kaito@legion Copyright &copy; 2023
           </h3>
