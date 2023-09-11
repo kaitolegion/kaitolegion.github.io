@@ -10,7 +10,12 @@
      padding:0;
      color: rgba(255,255,255,.75);
      font-family: 'Anonymous Pro', monospace;
-     background-color: rgb(25,25,25);
+     background-color: #000;
+}
+
+.footer {
+  bottom:0;
+  align-items: flex-end;
 }
  ul {
      list-style-type: none;
@@ -31,6 +36,13 @@
      height:140px;
      width:140px;
      animation: rotation 2s infinite linear;
+}
+#img-t {
+     content:url(https://avatars.githubusercontent.com/u/47966968?v=4);
+     border-radius:100%;
+     height:5vh;
+     width:5vh;
+    
 }
  @keyframes rotation {
      from {
@@ -71,35 +83,7 @@
          background-position: top right;
     }
 }
- .message-box{
-     background:#222;
-     width:60%;
-     height:50px;
-}
- .contact-box{
-     background:#222;
-     width:60%;
-     height:50px;
-     outline:none;
-     border:none;
-     color:green;
-}
- .btn-send{
-     outline:none;
-     border:none;
-     cursor:pointer;
-     background:green;
-     color:white;
-}
- .mymsg {
-     background:#222;
-     width:78%;
-     outline:none;
-     border:none;
-     padding:5px;
-     float:bottom;
-     top:0;
-}
+
  a, i {
      font-size:30px;
 }
@@ -115,25 +99,9 @@
      overflow: hidden;
      transform: translateY(-50%);
 }
- .anim-typewriter{
-     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
- @keyframes typewriter{
-     from{
-         width: 0;
-    }
-     to{
-         width: 24em;
-    }
-}
- @keyframes blinkTextCursor{
-     from{
-         border-right-color: rgba(255,255,255,.75);
-    }
-     to{
-         border-right-color: transparent;
-    }
-}
+
+
+
 
 /*. Responsive */
 .topnav .bars {
@@ -163,12 +131,14 @@
     }
      .topnav a.bars {
          float: right;
+         margin-top:10px;
+         margin-right:5px;
          display: block;
     }
 }
 .topnav a.home {
   display:block;
-  background-color: #04AA6D;
+  background-color: #1876ff;
   color: white;
 }
  @media screen and (max-width: 600px) {
@@ -190,7 +160,7 @@
     }
    
    .topnav.responsive a:hover {
-     background:#333;
+     background:rgba(0,0,0,0.5);
    }
 }
  
