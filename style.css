@@ -37,12 +37,9 @@
      width:140px;
      animation: rotation 2s infinite linear;
 }
-#img-t {
-     content:url(https://avatars.githubusercontent.com/u/47966968?v=4);
-     border-radius:100%;
-     height:5vh;
-     width:5vh;
-    
+
+.home {
+  padding: 16px 16px;
 }
  @keyframes rotation {
      from {
@@ -66,6 +63,7 @@
      text-decoration:none;
 }
  .flicker {
+     font-size:20px;
      margin: 1rem auto;
      color: #fffefe61;
      background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.4, #ffffff)) no-repeat;
@@ -87,21 +85,6 @@
  a, i {
      font-size:30px;
 }
- .line-1{
-     position: relative;
-     top: 50%;
-     width: 24em;
-     margin: 0 auto;
-     border-right: 2px solid rgba(255,255,255,.75);
-     font-size: 180%;
-     text-align: center;
-     white-space: nowrap;
-     overflow: hidden;
-     transform: translateY(-50%);
-}
-
-
-
 
 /*. Responsive */
 .topnav .bars {
@@ -115,13 +98,17 @@
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+/*   border:solid 1px; */
+  color: lime;
   text-align: center;
-  padding: 14px 16px;
-   font-size:13px;
+  padding: 16px 16px;
+  font-size:13px;
   text-decoration: none;
 }
 
+.topnav a:hover {
+     background:rgba(0,0,0,0.5);
+ }
 
  @media screen and (max-width: 600px) {
      .topnav a {
@@ -129,10 +116,9 @@
          float: left;
          padding: 14px 16px;
     }
+    /*  HAMBURGER  */
      .topnav a.bars {
          float: right;
-         margin-top:10px;
-         margin-right:5px;
          display: block;
     }
 }
@@ -141,6 +127,7 @@
   background-color: #1876ff;
   color: white;
 }
+/* DEVICE VIEW */
  @media screen and (max-width: 600px) {
      .topnav.responsive {
         position: relative;
@@ -158,7 +145,6 @@
          text-align: left;
        
     }
-   
    .topnav.responsive a:hover {
      background:rgba(0,0,0,0.5);
    }
