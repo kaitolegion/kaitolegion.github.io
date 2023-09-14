@@ -1,1 +1,23 @@
 
+body{
+color:white;
+background:black;
+text-align:center;
+}
+
+.box{
+border:1px solid red;
+height: 400px;
+}
+
+textarea {
+    outline:0;
+    color:lime;
+    background-color: transparent;
+    border:3px dotted red;
+    height: 100px;
+    width: 220px;
+}
+textarea::-webkit-scrollbar{
+  display: none;
+}
