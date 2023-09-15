@@ -1,12 +1,12 @@
-
 body{
 color:white;
 background:black;
 text-align:center;
+font: 400 100%/1.5 sans-serif;
 }
 
 .box{
-border:1px solid red;
+border:2px dashed red;
 height: 400px;
 }
 
@@ -16,8 +16,13 @@ textarea {
     background-color: transparent;
     border:3px dotted red;
     height: 100px;
-    width: 220px;
+    width: 320px;
 }
 textarea::-webkit-scrollbar{
   display: none;
+}
+select {
+    background-color: transparent;
+    color:lime;
+    outline:0;
 }
