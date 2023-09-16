@@ -17,7 +17,7 @@ textarea {
     background-color: rgba(2, 7, 15, 0.199);
     border:3px dotted red;
     height: 150px;
-    width: 380px;
+    width: 350px;
 }
 textarea::-webkit-scrollbar{
   display: none;
