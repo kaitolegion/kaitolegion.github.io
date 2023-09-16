@@ -1,22 +1,23 @@
 body{
 color:white;
-background:black;
+background:rgb(33 37 40);
 text-align:center;
 font: 400 100%/1.5 sans-serif;
 }
 
 .box{
 border:2px dashed red;
-height: 400px;
+height: 500px;
+
 }
 
 textarea {
     outline:0;
-    color:lime;
-    background-color: transparent;
+    color:rgba(0, 255, 0, 0.651);
+    background-color: rgba(2, 7, 15, 0.199);
     border:3px dotted red;
-    height: 100px;
-    width: 320px;
+    height: 150px;
+    width: 380px;
 }
 textarea::-webkit-scrollbar{
   display: none;
@@ -26,3 +27,10 @@ select {
     color:lime;
     outline:0;
 }
+
+button {
+    color:rgba(255, 255, 255, 0.493);
+    background-color: rgba(5, 15, 31, 0.199);
+    cursor:pointer;
+}
+
