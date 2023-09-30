@@ -4,13 +4,10 @@ background:rgb(33 37 40);
 text-align:center;
 font: 400 100%/1.5 sans-serif;
 }
-
 .box{
 border:2px dashed red;
 height: 500px;
-
 }
-
 textarea {
     outline:0;
     color:rgba(0, 255, 0, 0.651);
